@@ -1,0 +1,16 @@
+header{background-color:black; color: white; width:100%}
+.navigation{text-align: right; vertical-align: middle;}
+
+.topartists{display:flex; height:30%; width:30%;}
+.baseline{align-self:baseline;}
+.bottom{align-self: flex-end;}
+.albums{height:100px; width: 100px;}
+.wrap{flex-wrap:wrap;}
+.recentTracks{font-size:2px; color:red;}
+.column{border-bottom:3px solid black; width:225px; height:25px; font-size: 20px; font-family: 'Montserrat', sans-serif;}
+.recenttable{border-collapse: collapse;}
+.song{font-weight: bold;}
+.listened{font-style: italic; font-size:15px; color:#888a8c;}
+.smallalbum{width:25px; height:25px;}
+.smallcolumn{width:50px; border-bottom:3px solid black;}
+
