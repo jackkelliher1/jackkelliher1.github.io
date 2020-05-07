@@ -22,8 +22,9 @@ a:hover{color: #bdbdbd;} /*Style for when a link is hovered over by mouse*/
 .artist{color:#4a4a4a; width: 300px;} /*Style for the artist column of the recently listened table*/
 .smallalbum{width:45px; height:45px; vertical-align: middle; border-bottom: none;}/*Style for the album art on the recently listend table*/
 .smallcolumn{width:10%;padding-left: 1%; margin-right: auto; margin-left: auto;}/*Style for the album art cell on the recently listened table*/
-.page_title{font-size: 150%; margin: 1% 0% 2% 2%; font-weight: bold;}/*Style for all titles on the page except the lastFM title on the navigation bar*/
+.page_title{font-size: 150%; margin: 5% 0% 2% 2%; font-weight: bold;}/*Style for all titles on the page except the lastFM title on the navigation bar*/
 .username{position: absolute; padding-top: 14.5%; padding-left: 2%; font-size: 180%; font-weight: bold;}/*Style for the username at the top of the page*/
 .profile{display: inline-block; z-index: 2;}/*Makes the profile appear above the background image*/
 .overlay-text{position: absolute; bottom: 10%; color: black; font-weight: bold;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; font-size: 90%; left:7%;} /* Style for the text overlaying the artist pictures in the top artists flexbox*/
-.barColors{background-color:green; height:30%}
+.barColors{background-color:#69cf73; height:30px;}
+.barListens{padding-left: 5px; line-height: 30px; color:#424242}

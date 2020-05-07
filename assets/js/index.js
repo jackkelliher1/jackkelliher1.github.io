@@ -1,3 +1,18 @@
+
+
+function likeHeart(x){
+    let heartStatus = 1;
+    let heartChange = document.getElementById("heart" + String(x));
+    if(heartStatus == 0) {
+        heartChange.src = "./assets/img/fullHeart.png";
+        console.log("asdf");
+        heartStatus = 1;
+    } else {
+        heartChange.src = "./assets/img/emptyHeart.png";
+        heartStatus = 0;
+    }
+} 
+
 fetch('./assets/json/data.JSON')
     .then(res => {
         return res.json();
@@ -94,7 +109,6 @@ fetch('./assets/json/data.JSON')
         }
 
         
-
         for(let i = 0; i < topTracks.length; i++){
             let row = trackstable.insertRow(-1);
             //js for the album image cell
@@ -111,33 +125,54 @@ fetch('./assets/json/data.JSON')
             //Append the image into the cell
             image.appendChild(img);
 
+            //js for the heart
+            let heart = row.insertCell(1);
+            heart.classList.add("smallcolumn");
+            heart.classList.add("column");
+            let heartImage = document.createElement("IMG");
+            heartImage.classList.add("image");
+            heartImage.classList.add("smallalbum");
+            heartImage.src = "./assets/img/emptyHeart.png"
+            heartImage.id = "heart" + i;
+            
+            heart.appendChild(heartImage);
+
             //js for the song cell
-            let song = row.insertCell(1);
+            let song = row.insertCell(2);
             song.classList.add("column");
             song.classList.add("song");
             song.innerHTML = topTracks[i].song;
 
             //js for artist cell
-            let artist = row.insertCell(2);
+            let artist = row.insertCell(3);
             artist.classList.add("column");
             artist.classList.add("artist");
             artist.innerHTML = topTracks[i].artist;
 
             //js for last listened cell
-            let listened = row.insertCell(3);
+            let listened = row.insertCell(4);
             listened.classList.add("column");
             listened.classList.add("listened");
-            listened.innerHTML = topTracks[i].totalListens + " Listens";
 
-            let listenbarchart = row.insertCell(4);
-            listenbarchart.classList.add("column");
             let barDiv = document.createElement("DIV");
 
-            //Sets the width to the percentage of listens it has in relation to the top listened song
-            let barPercentage = (parseInt(topTracks[i].totalListens)/highestListens) * 100;
-            barDiv.style.width = String(barPercentage) + "%";
+            let barDivText = document.createElement("P");
             barDiv.classList.add("barColors");
+            barDivText.classList.add("barListens");
+            barDiv.appendChild(barDivText);
+            let barPercentage = (parseInt(topTracks[i].totalListens)/highestListens) * 100;
+            if(barPercentage == 100) {
+                barDivText.innerHTML = topTracks[i].totalListens + " Listens";
+            } else {
+                barDivText.innerHTML = topTracks[i].totalListens;
+            }
+            barDiv.style.width = String(barPercentage) + "%";
 
-            listenbarchart.appendChild(barDiv);
+            listened.appendChild(barDiv);
+        }
+    }
+    ).then(data =>{
+        for(let i = 0; i < 9; i++){
+            document.getElementById("heart" + i).addEventListener("click", likeHeart(i));
         }
     })
