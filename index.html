@@ -1,56 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="assets\css\index.css">
-        <script src="assets/js/index.js"></script>
-        <title> Last FM </title>
-    </head>
-    <body>
-        <header>
-            <h3>LastFM</h3>
-            <h3 class="navigation">Index</h3>
-            <h3 class="navigation">Contact</h3>
-        </header>
 
-        <table class="recenttable">
-            <thead class="recentTracks">
-                Recently Listened Tracks
-            </thead>
-            <tr>
-                <td class="smallcolumn"><img src="assets\img\album_cover3.jfif" class="smallalbum"></td>
-                <td class="column song">Burning Site</td>
-                <td class="column artist">Rouge Theater</td>
-                <td class="column listened">Last Listened 04/03/2020</td>
-            </tr>
-            <tr>
-                <td class="smallcolumn"><img src="assets\img\album_cover1.jfif" class="smallalbum"></td>
-                <td class="column song">Bring Nobles</td>
-                <td class="column artist">Brazong Rings</td>
-                <td class="column listened">Last Listened 02/03/2020</td>
-            </tr>
-            <tr>
-                <td class="smallcolumn"><img src="assets\img\album_cover4.jfif" class="smallalbum"></td>
-                <td class="column song">Diesel</td>
-                <td class="column artist">All Seductive</td>
-                <td class="column listened">Last Listened 27/02/2020</td>
-            </tr>
-            
+<head>
+    <link rel="stylesheet" type="text/css" href="assets\css\index.css"> <!--CSS style sheet-->
+    <script src="assets\js\index.js"></script> <!--JavaScript script-->
+    <title> Last FM </title> <!--Website title-->
+</head>
 
-        </table>
+<body>
+    <div class="header"> <!--Titlebar-->
+        <p class="navigation title">LastFM</p>
+        <p class="navigation pages"><a href="contact.html">Contact</a></p>
+        <p class="navigation pages"><a href="index.html">Index</a></p>
+    </div>
 
-        <p>Top Artists</p>
-        <div class="topartists wrap">
-            <img src="assets\img\album_cover1.jfif" class="baseline albums">
-            <img src="assets\img\album_cover2.jfif" class="baseline albums">
-            <img src="assets\img\album_cover3.jfif" class="baseline albums">
-            <img src="assets\img\album_cover4.jfif" class="baseline albums">
-            <img src="assets\img\album_cover5.jfif" class="baseline albums">
-            <img src="assets\img\album_cover6.jfif" class="baseline albums">
-            <img src="assets\img\album_cover7.jfif" class="baseline albums">
-            <img src="assets\img\album_cover8.jfif" class="baseline albums">
-        </div>
+    <div class="Header Images"> <!--Profile picture, backround image and profile name-->
+        <img src="assets/img/background_top.jpg" alt="LastFM" class="background_top"></img>
+        <img src="assets/img/pfp.jpg" alt="Profile Picture" class="pfp profile"></img>
+        <p class="username profile">Jack Kelliher</p>
+    </div>
 
-        <button>Click</button>
-        <div id="emptyDiv"></div>
-    </body>
+    <p class="page_title recentTracks">Recently Listened Tracks</p> <!--Table for the recently listened artists-->
+    <table class="recenttable" id="TopListened"></table>
+
+    <p class = "page_title">Top Artists</p> <!--Flexbox for the top artists section-->
+    <div class="wrap" id="artists"></div>
+
+    <table class="recenttable" id="TopTracks"></table>
+</body>
+
 </html>

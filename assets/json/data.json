@@ -1,0 +1,174 @@
+{
+    "recent": [
+        {
+            "recentListens": [
+                {
+                    "song": "Burning Site",
+                    "artist": "Rouge Theater",
+                    "image": "./assets/img/album_cover3.jfif",
+                    "lastListened": "10 seconds ago"
+                },
+                {
+                    "song": "Bring Nobles",
+                    "artist": "Brazong Rings",
+                    "image": "./assets/img/album_cover1.jfif",
+                    "lastListened": "40 seconds ago"
+                },
+                {
+                    "song": "Diesel",
+                    "artist": "All Seductive",
+                    "image": "./assets/img/album_cover2.jfif",
+                    "lastListened": "2 minutes ago"
+                },
+                {
+                    "song": "Friends Of Home",
+                    "artist": "Curse These Metal Hands",
+                    "image": "./assets/img/album_cover4.jfif",
+                    "lastListened": "10 minutes ago"
+                },
+                {
+                    "song": "Give His Shadow",
+                    "artist": "Man Feelings",
+                    "image": "./assets/img/album_cover5.jfif",
+                    "lastListened": "25 minutes ago"
+                },
+                {
+                    "song": "More Machine",
+                    "artist": "Hair Blair Bunch",
+                    "image": "./assets/img/album_cover6.jfif",
+                    "lastListened": "1 hour ago"
+                },
+                {
+                    "song": "Thank You",
+                    "artist": "Wipe Of Gulls",
+                    "image": "./assets/img/album_cover8.jfif",
+                    "lastListened": "1 hour ago"
+                },
+                {
+                    "song": "He Heard I Know",
+                    "artist": "Danny Dyer's Chocolate Homunculus",
+                    "image": "./assets/img/album_cover7.jfif",
+                    "lastListened": "4 hours ago"
+                },
+                {
+                    "song": "Shapes For A Thrill",
+                    "artist": "Bridge Soldiers",
+                    "image": "./assets/img/album_cover9.jpg",
+                    "lastListened": "1 day ago"
+                },
+                {
+                    "song": "Man Memories",
+                    "artist": "Mama's Kumquat",
+                    "image": "./assets/img/album_cover10.jpg",
+                    "lastListened": "1 day ago"
+                }
+            ],
+
+            "topArtists": [
+                {
+                    "artist": "Paragon Silence",
+                    "image": "./assets/img/artist1.jpg",
+                    "totalListens": "970"
+                },
+                {
+                    "artist": "Golem",
+                    "image": "./assets/img/artist2.jpg",
+                    "totalListens": "704"
+                },
+                {
+                    "artist": "PotHead",
+                    "image": "./assets/img/artist3.jpg",
+                    "totalListens": "592"
+                },
+                {
+                    "artist": "Ocean Red",
+                    "image": "./assets/img/artist5.jpg",
+                    "totalListens": "589"
+                },
+                {
+                    "artist": "HIT",
+                    "image": "./assets/img/artist4.jpg",
+                    "totalListens": "169"
+                },
+                {
+                    "artist": "Pivotal Materials",
+                    "image": "./assets/img/artist6.jpg",
+                    "totalListens": "122"
+                },
+                {
+                    "artist": "The Russian Designs",
+                    "image": "./assets/img/artist7.jpg",
+                    "totalListens": "76"
+                },
+                {
+                    "artist": "Cathedral Years",
+                    "image": "./assets/img/artist8.jpg",
+                    "totalListens": "52"
+                }
+            ],
+
+            "topTracks": [
+                {
+                    "song": "Friends Of Mirrors",
+                    "artist": "Imaginary Epoch",
+                    "totalListens": "196",
+                    "image": "./assets/img/topTracks1.jpg"
+                },
+                {
+                    "song": "Yearning Of People",
+                    "artist": "Future Replacement",
+                    "totalListens": "174",
+                    "image": "./assets/img/topTracks2.jpg"
+                },
+                {
+                    "song": "Wait For My Arms",
+                    "artist": "Covert Gossip",
+                    "totalListens": "160",
+                    "image": "./assets/img/topTracks3.jpg"
+                },
+                {
+                    "song": "Enjoy Her Love",
+                    "artist": "Blitz",
+                    "totalListens": "151",
+                    "image": "./assets/img/topTracks4.jpg"
+                },
+                {
+                    "song": "Light Money",
+                    "artist": "Daydream",
+                    "totalListens": "116",
+                    "image": "./assets/img/topTracks5.jpg"
+                },
+                {
+                    "song": "Dreams For An Angel",
+                    "artist": "Volley",
+                    "totalListens": "81",
+                    "image": "./assets/img/topTracks6.jpg"
+                },
+                {
+                    "song": "Sound",
+                    "artist": "Kayo",
+                    "totalListens": "73",
+                    "image": "./assets/img/topTracks7.jpg"
+                },
+                {
+                    "song": "Streets Of My Rhimes",
+                    "artist": "Android of Obsession",
+                    "totalListens": "67",
+                    "image": "./assets/img/topTracks8.jpg"
+                },
+                {
+                    "song": "Don't Need My Game",
+                    "artist": "Dreams of Iron",
+                    "totalListens": "57",
+                    "image": "./assets/img/topTracks9.jpg"
+                },
+                {
+                    "song": "Cool Beats",
+                    "artist": "Century of Utopia",
+                    "totalListens": "56",
+                    "image": "./assets/img/topTracks10.jpg"
+                }
+            ]
+        }
+    ]
+}
