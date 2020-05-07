@@ -136,7 +136,7 @@ fetch('./assets/json/data.JSON')
             //Sets the width to the percentage of listens it has in relation to the top listened song
             let barPercentage = (parseInt(topTracks[i].totalListens)/highestListens) * 100;
             barDiv.style.width = String(barPercentage) + "%";
-            barDiv.classList.add("barColors")
+            barDiv.classList.add("barColors");
 
             listenbarchart.appendChild(barDiv);
         }
