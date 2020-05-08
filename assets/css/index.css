@@ -1,30 +1,100 @@
 * {margin:0;padding: 0;} /*Stops the page putting padding and margin into areas where it is not needed */
 html{height:100%; margin:0px;font-family: Georgia, 'Times New Roman', Times, serif;} /*Style for text on page*/
-.header{width:100%;background-color:black; color: white; padding: 0.3%;position: fixed; z-index: 3;} /*Style for navigation bar*/
-body{margin:0px; height:0px; background-color: #ededed} /*style for background colour and sets margin and height to 0 to stop uneeded margins being introduced*/
+
+
 a{color:white; text-decoration: none;} /*Styles all links on the page, only the navigation bar has links*/
 a:hover{color: #bdbdbd;} /*Style for when a link is hovered over by mouse*/
 .navigation{vertical-align: middle; display:inline-block;}/*More styling for the navigation bar */
 
-.headerimages{width:100%;overflow: hidden; position: absolute;} /*Styles the elements on the top of the page, the profile picture, username and background image */
-.background_top{max-width:100%; height:auto;position: absolute;} /*Styles the image in the background of the top of the page */
-.pfp{width:15%; border-radius: 100%; position: relative; margin-top: 8%; margin-left:1%;} /*Styling for the profile picture*/
-.title{font-size: 165%;} /*Style for the lastFM title on the navigation bar*/
-.pages{padding:5px; padding-right:1%; font-size:100%; float: right;}/*Style for the index and contact links on the navigation bar*/
-.container{height:140px; width:140px;position: relative;} /*Styling for the top artists container*/
+
+
+
+
+
+
+
 .bottom{align-self: flex-end;} /* Styling for the bottom elements of the flexbox*/
-.artistimage{height:100%; width: 100%; order:1; flex-grow: 1;} /*Styling for the images in the top artists flexbox*/
+
 .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:560px; margin-left: 3%;} /*Styles the flexbox*/
-.column{border-bottom:1px solid lightslategray; width:200px; height:50px; font-size: 15px;color: #000000; padding-right: 0.3%;} /*Parent style for all cells of the recent listens table*/
+
 .recenttable{border-collapse: collapse; margin-left: 2%;} /*Styles the recently listened table */
 .song{font-weight: bold;} /*Styles the song in the recently listened table to bold*/
-.listened{font-size:15px; color:#adadad;} /*Style for the last listened column of the recently listened table*/
-.artist{color:#4a4a4a; width: 300px;} /*Style for the artist column of the recently listened table*/
-.smallalbum{width:45px; height:45px; vertical-align: middle; border-bottom: none;}/*Style for the album art on the recently listend table*/
-.smallcolumn{width:10%;padding-left: 1%; margin-right: auto; margin-left: auto;}/*Style for the album art cell on the recently listened table*/
-.page_title{font-size: 150%; margin: 5% 0% 2% 2%; font-weight: bold;}/*Style for all titles on the page except the lastFM title on the navigation bar*/
-.username{position: absolute; padding-top: 14.5%; padding-left: 2%; font-size: 180%; font-weight: bold;}/*Style for the username at the top of the page*/
+
+
+
+
+
 .profile{display: inline-block; z-index: 2;}/*Makes the profile appear above the background image*/
-.overlay-text{position: absolute; bottom: 10%; color: black; font-weight: bold;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; font-size: 90%; left:7%;} /* Style for the text overlaying the artist pictures in the top artists flexbox*/
-.barColors{background-color:#69cf73; height:30px;}
+
+
+
+/*Media Queries*/
+@media screen and (min-width:0px) {
+    .header{width:100%;background-color:black; color: white; padding: 0.3%;position: fixed; z-index: 3; height:90px} /*Style for navigation bar*/
+    .title{font-size:500%}
+    .pages{padding:5px; padding-right:10px; font-size:60px; float: right;}/*Style for the index and contact links on the navigation bar*/
+    .pfp{width:300px; border-radius: 100%; position: relative; margin-top: 110px; margin-left:1%;} /*Styling for the profile picture*/
+    .headerimages{width:100%;overflow: hidden; position: absolute;} /*Styles the elements on the top of the page, the profile picture, username and background image */
+    .background_top{max-width:100%; height:350px;position: absolute;} /*Styles the image in the background of the top of the page */
+    .username{position: absolute; padding-top: 250px; padding-left: 2%; font-size: 500%; font-weight: bold;}/*Style for the username at the top of the page*/
+    .artistimage{height:300px; width: 300px; order:1; flex-grow: 1;} /*Styling for the images in the top artists flexbox*/
+    .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:100%; margin-left: 3%;} /*Styles the flexbox*/
+    .container{height:300px; width:300px;position: relative;} /*Styling for the top artists container*/
+    .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:600px; margin-left: 3%;} /*Styles the flexbox*/
+    .page_title{font-size: 400%; margin: 5% 0% 2% 2%; font-weight: bold;}/*Style for all titles on the page except the lastFM title on the navigation bar*/
+    .listened{color:#adadad;} /*Style for the last listened column of the recently listened table*/
+    .artist{color:#4a4a4a; width: auto;} /*Style for the artist column of the recently listened table*/
+    .smallalbum{width:125px; height:125px; vertical-align: middle; border-bottom: none;}/*Style for the album art on the recently listend table*/
+    .smallcolumn{padding-left: 1%;}/*Style for the album art cell on the recently listened table*/
+    .column{border-bottom:1px solid lightslategray; color: #000000; font-size: 40px; padding-left: 6px;} /*Parent style for all cells of the recent listens table*/
+    .overlay-text{position: absolute; bottom: 10%; color: black; font-weight: bold;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; font-size: 50px; left:7%;} /* Style for the text overlaying the artist pictures in the top artists flexbox*/
+    .barColors{background-color:#69cf73; height:100px;}
+.barListens{color:#424242}
+::placeholder{font-size: 50px;}
+.feilds{margin-bottom: 20px;}
+.contactText{padding-left:30px; padding-top:10px; font-size: 50px;}
+input{font-size: 50px;}
+.button{margin-left:10%}
+.nameBox{width:100%; height:100px}
+.commentBox{height:200px}
+.commentButton{width:100%; height:60px; margin-bottom:2%;font-size: 50px;}
+.newcomment{border-style: solid; border-color: lightslategray; width: 100%; min-height: 10%; margin-bottom: 1%; font-size: 50px;}
+.commentText{overflow-wrap: break-word; padding-left:2%;}
+label{font-size: 100px;}
+}
+
+@media screen and (min-width:1024px){
+    .title{font-size: 165%;} /*Style for the lastFM title on the navigation bar*/
+    .header{width:100%;background-color:black; color: white; padding: 0.3%;position: fixed; z-index: 3; height:30px} /*Style for navigation bar*/
+    .pages{padding:5px; padding-right:1%; font-size:100%; float: right;}/*Style for the index and contact links on the navigation bar*/
+    .pfp{width:15%; border-radius: 100%; position: relative; margin-top: 8%; margin-left:1%;} /*Styling for the profile picture*/
+    .headerimages{width:100%;overflow: hidden; position: absolute;} /*Styles the elements on the top of the page, the profile picture, username and background image */
+    .background_top{max-width:100%; height:auto;position: absolute;} /*Styles the image in the background of the top of the page */
+    .username{position: absolute; padding-top: 14.5%; padding-left: 2%; font-size: 180%; font-weight: bold;}/*Style for the username at the top of the page*/
+    .artistimage{height:100%; width: 100%; order:1; flex-grow: 1;} /*Styling for the images in the top artists flexbox*/
+    .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:560px; margin-left: 3%;} /*Styles the flexbox*/
+    .container{height:140px; width:140px;position: relative;} /*Styling for the top artists container*/
+    .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:560px; margin-left: 3%;} /*Styles the flexbox*/
+    .page_title{font-size: 150%; margin: 5% 0% 2% 2%; font-weight: bold;}/*Style for all titles on the page except the lastFM title on the navigation bar*/
+    .listened{font-size:15px; color:#adadad;} /*Style for the last listened column of the recently listened table*/
+    .artist{color:#4a4a4a; width: 300px;} /*Style for the artist column of the recently listened table*/
+    .smallalbum{width:45px; height:45px; vertical-align: middle; border-bottom: none;}/*Style for the album art on the recently listend table*/
+    .column{border-bottom:1px solid lightslategray; width:200px; height:50px; font-size: 15px;color: #000000; padding-right: 0.3%;} /*Parent style for all cells of the recent listens table*/
+    .overlay-text{position: absolute; bottom: 10%; color: black; font-weight: bold;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; font-size: 90%; left:7%;} /* Style for the text overlaying the artist pictures in the top artists flexbox*/
+    .smallcolumn{width:0px;padding-left: 1%;}/*Style for the album art cell on the recently listened table*/
+    .barColors{background-color:#69cf73; height:30px;}
 .barListens{padding-left: 5px; line-height: 30px; color:#424242}
+.form{padding-top:30px; padding-left: 10%;}
+.feilds{margin-bottom: 20px;}
+.contactText{padding-left:30px; padding-top:10px; font-size:auto;}
+.button{margin-left:10%}
+.nameBox{width:40%; height:40px;}
+.commentBox{height:100px}
+.commentButton{width:40.5%; height: 30px; margin-bottom:2%; font-size:20px;}
+.newcomment{border-style: solid; border-color: lightslategray; width: 60%; min-height: 10%; margin-bottom: 1%; font-size:20px;}
+.commentText{overflow-wrap: break-word; padding-left:2%}
+::placeholder{font-size: 15px;}
+input{font-size: 15px;}
+.song{font-weight: bold;} /*Styles the song in the recently listened table to bold*/
+label{font-size: 120%;}
+}

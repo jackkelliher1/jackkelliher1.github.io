@@ -1,4 +1,20 @@
-
+function addComment(){
+    let newCommentDiv = document.createElement("DIV");
+    newCommentDiv.classList.add("newcomment")
+    let commentName = document.createElement("P");
+    let commentText = document.createElement("P");
+    let name = document.getElementById("commentname").value;
+    let comment = document.getElementById("commenttext").value;
+    let commentSection = document.getElementById("commentDiv");
+    commentName.innerHTML = name;
+    commentName.classList.add("song");
+    commentText.innerHTML = comment;
+    commentText.classList.add("feilds");
+    commentText.classList.add("commentText");
+    newCommentDiv.appendChild(commentName);
+    newCommentDiv.appendChild(commentText);
+    commentSection.appendChild(newCommentDiv);
+}
 
 function likeHeart(x){
     let heartStatus = 1;
@@ -127,8 +143,8 @@ fetch('./assets/json/data.JSON')
 
             //js for the heart
             let heart = row.insertCell(1);
-            heart.classList.add("smallcolumn");
             heart.classList.add("column");
+            heart.classList.add("smallcolumn");
             let heartImage = document.createElement("IMG");
             heartImage.classList.add("image");
             heartImage.classList.add("smallalbum");
@@ -176,3 +192,4 @@ fetch('./assets/json/data.JSON')
             document.getElementById("heart" + i).addEventListener("click", likeHeart(i));
         }
     })
+

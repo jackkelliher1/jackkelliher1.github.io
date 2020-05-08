@@ -2,32 +2,47 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="assets\css\index.css"> <!--CSS style sheet-->
-    <script src="assets\js\index.js"></script> <!--JavaScript script-->
-    <title> Last FM </title> <!--Website title-->
+    <link rel="stylesheet" type="text/css" href="assets\css\index.css">
+    <!--CSS style sheet-->
+    <script src="assets\js\index.js"></script>
+    <!--JavaScript script-->
+    <title> Last FM </title>
+    <!--Website title-->
 </head>
 
 <body>
-    <div class="header"> <!--Titlebar-->
+    <div class="header">
+        <!--Titlebar-->
         <p class="navigation title">LastFM</p>
         <p class="navigation pages"><a href="contact.html">Contact</a></p>
         <p class="navigation pages"><a href="index.html">Index</a></p>
     </div>
 
-    <div class="Header Images"> <!--Profile picture, backround image and profile name-->
+    <div class="Header Images">
+        <!--Profile picture, backround image and profile name-->
         <img src="assets/img/background_top.jpg" alt="LastFM" class="background_top"></img>
         <img src="assets/img/pfp.jpg" alt="Profile Picture" class="pfp profile"></img>
         <p class="username profile">Jack Kelliher</p>
     </div>
 
-    <p class="page_title recentTracks">Recently Listened Tracks</p> <!--Table for the recently listened artists-->
+    <p class="page_title recentTracks">Recently Listened Tracks</p>
+    <!--Table for the recently listened artists-->
     <table class="recenttable" id="TopListened"></table>
 
-    <p class = "page_title">Top Artists</p> <!--Flexbox for the top artists section-->
+    <p class="page_title">Top Artists</p>
+    <!--Flexbox for the top artists section-->
     <div class="wrap" id="artists"></div>
 
-    <p class = "page_title">Top Tracks</p>
+    <p class="page_title">Top Tracks</p>
     <table class="recenttable" id="TopTracks"></table>
+    <p class="page_title">Comments</p>
+    <div class="form">
+        <input type="text" name="name" class="nameBox" id="commentname" placeholder="Full Name"><br>
+        <input type="text" name="comment" class="nameBox commentBox " id="commenttext" placeholder="Enter Comment Here"><br>
+        <button type="submit" name="submit" class="commentButton" onclick="addComment();">Post</button>
+    </div>
+    <hr>
+    <div class="form" id="commentDiv"></div>
 </body>
 
 </html>
