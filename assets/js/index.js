@@ -29,7 +29,7 @@ function likeHeart(x){
     }
 } 
 
-fetch('\assets\json\data.JSON')
+fetch('.\json\data.JSON')
     .then(res => {
         return res.json();
     })
