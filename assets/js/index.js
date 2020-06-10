@@ -28,7 +28,7 @@ function likeHeart(x){
     }
 } 
 
-fetch('./json/data.json')
+fetch('assets/json/data.json')
     .then(res => {
         return res.json();
     })
