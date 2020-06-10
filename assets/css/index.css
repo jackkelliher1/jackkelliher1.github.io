@@ -32,7 +32,7 @@ a:hover{color: #bdbdbd;} /*Style for when a link is hovered over by mouse*/
 @media screen and (min-width:0px) {
     .header{width:100%;background-color:black; color: white; padding: 0.3%;position: fixed; z-index: 3; height:90px} /*Style for navigation bar*/
     .title{font-size:500%}
-    .pages{padding:5px; padding-right:10px; font-size:60px; float: right;}/*Style for the index and contact links on the navigation bar*/
+    .pages{padding:5px; padding-right:10px; font-size:40px; float: right;}/*Style for the index and contact links on the navigation bar*/
     .pfp{width:300px; border-radius: 100%; position: relative; margin-top: 110px; margin-left:1%;} /*Styling for the profile picture*/
     .headerimages{width:100%;overflow: hidden; position: absolute;} /*Styles the elements on the top of the page, the profile picture, username and background image */
     .background_top{max-width:100%; height:350px;position: absolute;} /*Styles the image in the background of the top of the page */
@@ -40,7 +40,7 @@ a:hover{color: #bdbdbd;} /*Style for when a link is hovered over by mouse*/
     .artistimage{height:300px; width: 300px; order:1; flex-grow: 1;} /*Styling for the images in the top artists flexbox*/
     .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:100%; margin-left: 3%;} /*Styles the flexbox*/
     .container{height:300px; width:300px;position: relative;} /*Styling for the top artists container*/
-    .wrap{display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: stretch; align-content: center; width:600px; margin-left: 3%;} /*Styles the flexbox*/
+
     .page_title{font-size: 400%; margin: 5% 0% 2% 2%; font-weight: bold;}/*Style for all titles on the page except the lastFM title on the navigation bar*/
     .listened{color:#adadad;} /*Style for the last listened column of the recently listened table*/
     .artist{color:#4a4a4a; width: auto;} /*Style for the artist column of the recently listened table*/
@@ -86,7 +86,7 @@ label{font-size: 100px;}
 .barListens{padding-left: 5px; line-height: 30px; color:#424242}
 .form{padding-top:30px; padding-left: 10%;}
 .feilds{margin-bottom: 20px;}
-.contactText{padding-left:30px; padding-top:10px; font-size:auto;}
+.contactText{padding-left:30px; padding-top:10px; font-size:100%; font-weight:bold;}
 .button{margin-left:10%}
 .nameBox{width:40%; height:40px;}
 .commentBox{height:100px}
