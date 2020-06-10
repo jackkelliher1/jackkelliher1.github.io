@@ -21,7 +21,6 @@ function likeHeart(x){
     let heartChange = document.getElementById("heart" + String(x));
     if(heartStatus == 0) {
         heartChange.src = "./assets/img/fullHeart.png";
-        console.log("asdf");
         heartStatus = 1;
     } else {
         heartChange.src = "./assets/img/emptyHeart.png";
@@ -29,7 +28,7 @@ function likeHeart(x){
     }
 } 
 
-fetch('.\json\data.JSON')
+fetch('.\json\data.json')
     .then(res => {
         return res.json();
     })
