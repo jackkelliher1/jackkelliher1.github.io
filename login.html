@@ -4,7 +4,6 @@
 <head>
     <link rel="stylesheet" type="text/css" href="assets\css\index.css">
     <!--CSS style sheet-->
-    <script src="assets\js\index.js"></script>
     <!--JavaScript script-->
     <title> Contact </title>
     <!--Website title-->
@@ -19,9 +18,21 @@
         <p class="navigation pages"><a href="login.html">Login</a></p>
     </div>
 
-    <p class="title contactTitle">Contact Me</p>
+    <div class="Header Images"> <!--Profile picture, backround image and profile name-->
+        <img src="assets/img/background_top.jpg" alt="LastFM" class="background_top"></img>
+        <img src="assets/img/pfp.jpg" alt="Profile Picture" class="pfp profile"></img>
+        <p class="username profile">Jack Kelliher</p>
+    </div>
+
+    <p class="page_title">Login</p>
     <p class="contactText">Enter your full name, email and phone number.</p>
-    <p class="contactText">Thanks for your submission</p>
+    <div class="form">
+        <label for="name" class="nameBox"> Username:</label><br>
+        <input type="text" class="feilds" name="name"><br>
+        <label for="email">Password:</label><br>
+        <input type="text" class="feilds" name="email"><br>
+    </div>
+    <input type="submit" value="submit" class="button" onclick="window.location.href = '/submitted.html'">
 </body>
 
 </html>
